@@ -79,6 +79,12 @@ public class calculatorTest {
 		}
 	}
 
+	@Test
+	public void testPower() {
+		int result = calculator.calcPower(2, 3);
+		assertEquals(8, result);
+	}
+
 	@After
 	public void cleanUp() {
 		// Perform any necessary clean up after each test
