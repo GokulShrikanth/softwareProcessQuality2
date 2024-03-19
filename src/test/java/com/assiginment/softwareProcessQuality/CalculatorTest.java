@@ -1,4 +1,4 @@
-package com.javacodegeeks.examples.junitmavenexample;
+package com.assiginment.softwareProcessQuality;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
