@@ -8,12 +8,12 @@ import org.junit.After;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-public class CalculatorTest {
-	private static ICalculator calculator;
+public class calculatorTest {
+	private static calculatorImpl calculator;
 
 	@BeforeClass
 	public static void initCalculator() {
-		calculator = new Calculator();
+		calculator = new calculatorImpl();
 	}
 
 	@Test

@@ -1,39 +1,13 @@
 package com.assiginment.softwareProcessQuality;
 
-public class Calculator implements ICalculator {
+public interface calculator {
+	int sum(int a, int b);
 
-	@Override
-	public int sum(int a, int b) {
-		return a + b;
-	}
+	int subtraction(int a, int b);
 
-	@Override
-	public int subtraction(int a, int b) {
-		return a - b;
-	}
+	int multiplication(int a, int b);
 
-	@Override
-	public int multiplication(int a, int b) {
-		return a * b;
-	}
+	int divison(int a, int b) throws Exception;
 
-	@Override
-	public int divison(int a, int b) throws Exception {
-		if (b == 0) {
-			throw new Exception("Divider can't be zero");
-		}
-
-		return a / b;
-	}
-
-	@Override
-	public boolean equalIntegers(int a, int b) {
-		boolean result = false;
-
-		if (a == b) {
-			result = true;
-		}
-
-		return result;
-	}
+	boolean equalIntegers(int a, int b);
 }
