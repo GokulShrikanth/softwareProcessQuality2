@@ -8,6 +8,8 @@ import org.junit.After;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
+import java.util.Vector;
+
 public class calculatorTest {
 	private static calculatorImpl calculator;
 

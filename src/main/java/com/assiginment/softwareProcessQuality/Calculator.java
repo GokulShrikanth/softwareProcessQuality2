@@ -10,4 +10,6 @@ public interface calculator {
 	int divison(int a, int b) throws Exception;
 
 	boolean equalIntegers(int a, int b);
+
+	int calcPower(int a, int b);
 }

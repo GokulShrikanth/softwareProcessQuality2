@@ -1,5 +1,7 @@
 package com.assiginment.softwareProcessQuality;
 
+import java.util.Vector;
+
 public class calculatorImpl implements calculator {
 
 	@Override
@@ -32,6 +34,17 @@ public class calculatorImpl implements calculator {
 
 		if (a == b) {
 			result = true;
+		}
+
+		return result;
+	}
+
+	@Override
+	public int calcPower(int base, int exponent) {
+		int result = 1;
+
+		for (int i = 0; i < exponent; i++) {
+			result *= base;
 		}
 
 		return result;
